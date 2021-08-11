@@ -34,8 +34,8 @@ function setup() {
   
   
   //set collider for sword
-  knife.setCollider("rectangle",0,0,40,40);
-
+  //1. do it here
+  
   // Score variables and Groups
   score=0;
   fruitGroup=createGroup();
@@ -53,12 +53,13 @@ function draw() {
     Monster();
     
     // Move sword with mouse
-    knife.y=World.mouseY;
-    knife.x=World.mouseX;
+    //2. do it here
+    
   
     // Increase score if sword touching fruit
     if(fruitGroup.isTouching(knife)){
-      fruitGroup.destroyEach();
+      //3.destroy fruitgroup here
+      
       
       knifeSwooshSound.play();
       score=score+2;
