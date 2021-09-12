@@ -27,7 +27,7 @@ function setup() {
   createCanvas(600, 600);
   
   //creating sword
-   knife=createSprite(40,200,20,20);
+   knife=createSprite();
    knife.addImage(knifeImage);
    knife.scale=0.7
   
