@@ -27,7 +27,7 @@ function setup() {
   createCanvas(600, 600);
   
   //creating sword
-   knife=createSprite();
+   knife=createSprite(40,200,20,20);
    knife.addImage(knifeImage);
    knife.scale=0.7
   
@@ -35,7 +35,7 @@ function setup() {
   
   //set collider for sword
   //1. do it here
-  
+  knife.setCollider("rectangle",0,0,40,40)
   // Score variables and Groups
   score=0;
   fruitGroup=createGroup();
